@@ -320,13 +320,25 @@
 
   .project-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
 
-  .proj-link {
-    font-family: var(--mono); font-size: 0.72rem; color: var(--muted);
-    text-decoration: none; letter-spacing: 0.1em; padding: 0.4rem 0.8rem;
-    border: 1px solid var(--border); border-radius: 2px; transition: all 0.15s; white-space: nowrap;
-  }
+.proj-link {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  padding: 0.6rem 1.2rem;
 
-  .proj-link:hover { color: var(--accent); border-color: var(--accent); }
+  border: 1px solid var(--border);
+  border-radius: 4px;
+
+  background: var(--bg2);   /* adds button feel */
+  transition: all 0.2s ease;
+}
+
+.proj-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 212, 255, 0.08);
+  transform: translateY(-2px);
+}
+
 
   /* ── CONTACT ── */
   #contact {
