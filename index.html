@@ -196,15 +196,27 @@
   .btn-ghost { background: transparent; color: var(--accent); border: 1px solid var(--border2); transition: all 0.3s; }
   .btn-ghost:hover { border-color: var(--accent); background: rgba(201,122,0,0.06); transform: translateY(-2px); }
 
-  .hero-status {
-    position: absolute; bottom: 3rem; right: 6rem;
-    display: flex; align-items: center; gap: 0.6rem;
-    font-family: var(--mono); font-size: 0.72rem; color: var(--muted);
-    letter-spacing: 0.1em; opacity: 0; animation: fadeIn 1s 1.4s forwards;
-  }
+   .hero-status {
+  position: absolute;
+  bottom: 3rem;
+  right: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-family: var(--mono);
+  font-size: 0.95rem;   /* 🔥 bigger text */
+  font-weight: 500;     /* slightly stronger */
+
+  color: var(--accent3); /* optional: make it pop */
+  letter-spacing: 0.12em;
+
+  opacity: 0;
+  animation: fadeIn 1s 1.4s forwards;
+}
 
   .status-dot {
-    width: 7px; height: 7px; border-radius: 50%;
+    width: 9px; height: 9px; border-radius: 50%;
     background: var(--accent3); box-shadow: 0 0 8px var(--accent3);
     animation: pulse 2s infinite; transition: background 0.4s, box-shadow 0.4s;
   }
